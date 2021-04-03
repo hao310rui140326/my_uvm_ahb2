@@ -32,5 +32,8 @@ module top;
 
         end
 
+
+	dump u_dump();
+
 endmodule
 

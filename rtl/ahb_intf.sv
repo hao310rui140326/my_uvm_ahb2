@@ -38,7 +38,7 @@ interface ahb_intf(input logic HCLK);
                 default input #1 output #0;
 
                 input HRESETn;
-                input HREADY;
+                //input HREADY;
                 input HTRANS;
                 input HBURST;
                 input HSIZE;
@@ -69,7 +69,7 @@ interface ahb_intf(input logic HCLK);
         clocking smon_cb@(posedge HCLK);
                 default input #1 output #0;
 
-                input HREADY;
+                //input HREADY;
                 input HTRANS;
                 input HBURST;
                 input HSIZE;
