@@ -55,7 +55,7 @@ run_test4: clean lib cmp
 	vsim $(VSIMBATCH4) -coverage -novopt -sva -sv_seed random -l test4_sim.log work.top +UVM_TESTNAME=w4busy_test
 	vcover report -html cov4
 clean: 
-	rm -rf modelsim.* transcript* *log* work vsim.wlf vish_* fcover* covhtml* cov*  csrc simv*
+	rm -rf modelsim.* transcript* *log* work vsim.wlf vish_* fcover* covhtml* cov*  csrc simv*  ucli.key   *.vpd   vc_hdrs.h  verdiLog*   
 	clear
 vcs_sim:
 	vcs $(VCSOPT1)  $(INC) $(RTL) $(PKG) $(TOP) $(DUMP)   -top  top   $(VCSOPT2)

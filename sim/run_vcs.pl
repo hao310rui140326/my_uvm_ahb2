@@ -152,7 +152,7 @@ sub run_gui(){
 
 #-----------------------------------------------------------------#
 sub clean(){
-        system "rm -rf modelsim* transcript* *log* work vsim.wlf wlf* fcover* covhtml* cov* csrc simv* ";
+        system "rm -rf modelsim* transcript* *log* work vsim.wlf wlf* fcover* covhtml* cov* csrc simv* ucli.key   *.vpd   vc_hdrs.h  verdiLog*  ";
         system "clear";
 }
 
